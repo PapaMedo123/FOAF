@@ -1,1 +1,37 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<https://raw.githubusercontent.com/PapaMedo123/FOAF/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/PapaMedo123/FOAF/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/PapaMedo123/FOAF/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/PapaMedo123/FOAF/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Ivan Janev" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Ivan" ;
+  foaf:family_name "Janev" ;
+  foaf:nick "Medo" ;
+  foaf:mbox_sha1sum "c21dd7ccbb4f4f94fcfa1f3d7131bb280663c8f8" ;
+  foaf:phone <tel:078-123-123> ;
+  foaf:workplaceHomepage <https://courses.finki.ukim.mk/> ;
+  foaf:workInfoHomepage <https://raw.githubusercontent.com/PapaMedo123/FOAF/main/Study> ;
+  foaf:schoolHomepage <https://www.finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Mite Mazgaliev" ;
+    foaf:mbox_sha1sum "018c948917e2f01c59a80a6e39da2f007a6320be" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/Mazgaliev/VBS/master/src/main/java/org/L5/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Martin Dinev" ;
+    foaf:mbox_sha1sum "35cde4d322c8ac4f43d1194833267a68b6fa9e9e"
+  ], [
+    a foaf:Person ;
+    foaf:name "Lenka Janeva" ;
+    foaf:mbox_sha1sum "7528274f531f35442280d0ca4ceca5cd885ca0ee"
+  ] .
